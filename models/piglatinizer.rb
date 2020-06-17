@@ -5,7 +5,7 @@ class PigLatinizer
 
   def piglatinize(text)
       combine = []
-      text_array = text.downcase.split(" ")
+      text_array = text.split(" ")
       text_array.each do |word|
           word_array = word.split("")
           if ["A", "E", "I", "O", "U"].include?(word_array.first)
