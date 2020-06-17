@@ -1,3 +1,4 @@
+class Piglatinizer
 def piglatinize(text)
     combine = []
     text_array = text.downcase.split(" ")
@@ -13,4 +14,5 @@ def piglatinize(text)
         end
     end
     combine.join(" ")
+end
 end
