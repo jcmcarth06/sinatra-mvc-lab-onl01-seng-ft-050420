@@ -2,7 +2,7 @@ class PigLatinizer
 
   def initialize
   end
-  
+
   def piglatinize(text)
       combine = []
       text_array = text.downcase.split(" ")
