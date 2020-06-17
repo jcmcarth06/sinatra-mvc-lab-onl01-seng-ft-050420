@@ -9,12 +9,16 @@ class PigLatinizer
       text_array.each do |word|
           word_array = word.split("")
           if ["A", "E", "I", "O", "U"].include?(word_array.first)
-              '#{word}way'
+              "#{word}way"
               combine << word_array.join()
           else
-              first = word_array.shift()
-              word_array.push(first, "a", "y")
-              combine << word_array.join()
+              consonants = []
+              consonants << word[0]
+                if !["a", "e", "i", "o", "u"].include?(word[1])
+                  consonants << word[1]
+                if !["a", "e", "i", "o", "u"].include?(word[1])
+                  consonants << word[2]
+                end
           end
       end
       combine.join(" ")
