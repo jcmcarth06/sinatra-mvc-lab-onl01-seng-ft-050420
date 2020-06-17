@@ -3,7 +3,7 @@ def piglatinize(text)
     text_array = text.downcase.split(" ")
     text_array.each do |word|
         word_array = word.split("")
-        if ["a", "e", "i", "o", "u"].include?(word_array.first)
+        if ["A", "E", "I", "O", "U"].include?(word_array.first)
             word_array.push("w", "a", "y")
             combine << word_array.join()
         else
