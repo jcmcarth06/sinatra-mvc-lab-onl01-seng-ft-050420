@@ -11,5 +11,5 @@ class App < Sinatra::Base
     @latin = PigLatinizer.new.piglatinize(@phrase)
     erc :piglatinize
   end
-  
+
 end
