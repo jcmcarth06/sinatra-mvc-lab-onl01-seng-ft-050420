@@ -9,7 +9,7 @@ class PigLatinizer
       text_array.each do |word|
           word_array = word.split("")
           if ["A", "E", "I", "O", "U"].include?(word_array.first)
-              word_array.push("w", "a", "y")
+              '#{word}way'
               combine << word_array.join()
           else
               first = word_array.shift()
